@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: MyWidget(Colors.deepPurple, Colors.deepPurpleAccent),
       ),
     ),
   );
 }
-
-
