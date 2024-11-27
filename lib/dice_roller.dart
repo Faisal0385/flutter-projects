@@ -14,8 +14,7 @@ class _DiceRollerState extends State<DiceRoller> {
   var diceNum = 2;
 
   void rollDice() {
-    setState(() => diceNum = randomizer.nextInt(6) + 1
-    );
+    setState(() => diceNum = randomizer.nextInt(6) + 1);
   }
 
   @override
@@ -31,8 +30,9 @@ class _DiceRollerState extends State<DiceRoller> {
         OutlinedButton(
           onPressed: rollDice,
           style: TextButton.styleFrom(
-              foregroundColor: Colors.white,
-              textStyle: const TextStyle(fontSize: 20)),
+            foregroundColor: Colors.white,
+            textStyle: const TextStyle(fontSize: 20),
+          ),
           child: const Text("Roll Dice"),
         ),
       ],
